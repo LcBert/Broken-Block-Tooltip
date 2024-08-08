@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "L",
+    "keyBindingName": "Broken Block Toogle Message",
+    "keyBindingCategoryKey": "ui",
+    "onKeyPressed": {
+      "name": "ToogleBrokenBlockMessage"
+    }
+  }
+}
