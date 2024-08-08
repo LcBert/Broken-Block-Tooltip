@@ -112,16 +112,19 @@
   "workspaceSettings": {
     "modid": "broken_block_tooltip",
     "modName": "Broken Block Tooltip",
-    "version": "1.0.0",
-    "author": "lucab, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "version": "1.0.1",
+    "description": "A mod that add a tooltip to pickaxes, axes and shovels that indicate how many blocks that tool has break",
+    "author": "lc_bert",
+    "websiteURL": "https://github.com/LcBert/Broken-Block-Tooltip",
+    "license": "MIT License",
     "serverSideOnly": false,
+    "modPicture": "mod_icon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.brokenblocktooltip"
   },
   "mcreatorVersion": 202400229712

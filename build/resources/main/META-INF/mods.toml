@@ -1,14 +1,16 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Not specified"
+license="MIT License"
 
 [[mods]]
 modId="broken_block_tooltip"
-version="1.0.0"
+version="1.0.1"
 displayName="Broken Block Tooltip"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/LcBert/Broken-Block-Tooltip"
+logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="lucab, MCreator"
+authors="lc_bert"
+description="A mod that add a tooltip to pickaxes, axes and shovels that indicate how many blocks that tool has break"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

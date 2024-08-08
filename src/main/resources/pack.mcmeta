@@ -1,6 +1,6 @@
 {
   "pack": {
     "pack_format": 15,
-    "description": ""
+    "description": "A mod that add a tooltip to pickaxes, axes and shovels that indicate how many blocks that tool has break"
   }
 }

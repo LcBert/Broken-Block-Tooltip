@@ -6,10 +6,14 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.brokenblocktooltip.network.BrokenBlockTooltipModVariables;
 
 import javax.annotation.Nullable;
 
@@ -36,6 +40,11 @@ public class BlockIsBrokenProcedure {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("broken_block", Math.round(0));
 			} else {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("broken_block", (Math.round(broken_tag_value) + 1));
+			}
+			if ((entity.getCapability(BrokenBlockTooltipModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new BrokenBlockTooltipModVariables.PlayerVariables())).show_broken_block_message) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("\u00A77Broken Block:\u00A7r " + Math.round((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("broken_block")))),
+							true);
 			}
 		}
 	}
